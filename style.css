@@ -1,0 +1,142 @@
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* Outfit, 300, 400, 600 */
+
+:root {
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --verydarkbluemainbg: hsl(217, 54%, 11%); /* Main BG */
+  --verydarkbluecardbg: hsl(216, 50%, 16%); /* Card BG */
+  --verydarkblueline: hsl(215, 32%, 27%); /* Line */
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--verydarkbluemainbg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--verydarkbluecardbg);
+  height: 100%;
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 40px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--white);
+  font-family: "outfit", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 25px 0 15px 0;
+}
+
+.textcontainer > P {
+  color: var(--white);
+  font-size: 300;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.pricecontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.days {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.imagecontainer {
+  display: block;
+}
+
+.eye {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  align-items: center;
+  opacity: 0;
+  width: 100px;
+}
+
+.eye:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.nft {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border: solid var(--white) 2px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.profilecontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profilep {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.profilelink {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.line {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--verydarkblueline);
+}
